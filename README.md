@@ -15,6 +15,6 @@ This will create a new database named 'wolox' and will run migrations to create 
 
 ## Try the API
 
-Documentation is available here: [Go to docs]('https://documenter.getpostman.com/view/10987040/TW6tLq57')
+Documentation is available here: [Go to docs](https://documenter.getpostman.com/view/10987040/TW6tLq57)
 
 Postman collection: [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/de0047489a725a200518)
