@@ -1,8 +1,8 @@
-### Cryptocurrencies Monitor
+#### Cryptocurrencies Monitor
 
 This is a Node/Express API that is wrapper of [CoinGecko](​https://www.coingecko.com/en/api​).
 
-#### Instructions
+### Instructions
 
 ## Run the app locally
 
@@ -18,8 +18,9 @@ Documentation is available here: [Go to docs](https://documenter.getpostman.com/
 Postman collection: [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/de0047489a725a200518)
 
 Available endpoints:
-`POST /users/register` - Register a new user
-`POST /users/login` - Login
-`POST /crypto/add-coin` - Add favorite coins
-`GET /crypto/coins` - List all available coins
-`GET /crypto/top/:N/:order` - List and sort top N favorite coins
+
+- `POST /users/register` - Register a new user
+- `POST /users/login` - Login
+- `POST /crypto/add-coin` - Add favorite coins
+- `GET /crypto/coins` - List all available coins
+- `GET /crypto/top/:N/:order` - List and sort top N favorite coins
