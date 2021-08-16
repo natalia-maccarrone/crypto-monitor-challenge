@@ -4,9 +4,8 @@ const app = express()
 const port = process.env.PORT
 const usersRouter = require('./routes/users')
 const cryptoRouter = require('./routes/crypto')
-const bodyParser = require('body-parser')
 
-app.use(bodyParser.json())
+app.use(express.json())
 app.use('/users', usersRouter)
 app.use('/crypto', cryptoRouter)
 
@@ -14,6 +13,6 @@ app.use((req, res) => {
   res.status(404).send('Route was not not found')
 })
 
-app.listen(port, () => console.log('Listening...'))
+app.listen(port, () => console.log(`Listening on port ${port}`))
 
 module.exports = app

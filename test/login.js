@@ -1,12 +1,11 @@
-const chai = require('chai')
-const chaiHttp = require('chai-http')
-const expect = require('chai').expect
+const jest = require('jest')
 const db = require('../models')
 
-chai.use(chaiHttp)
-const url = 'http://localhost:4000/users'
+jest.mock(db, () => {
+  const Sequelize = jest.fn()
+})
 
-describe('Login: ', () => {
+db.describe('Login: ', () => {
   before('clears the User table', async function () {
     return await db.sequelize.models.User.destroy({ where: {}, force: true })
   })
